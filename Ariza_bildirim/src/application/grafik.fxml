@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controllergrafik">
+   <children>
+      <AnchorPane layoutX="-14.0" prefHeight="549.0" prefWidth="749.0">
+         <children>
+            <BarChart fx:id="denemechart" layoutX="125.0" layoutY="75.0" title="NTP-2 SINAVI">
+              <xAxis>
+                <CategoryAxis fx:id="ogrenciler" endMargin="10.0" label="Değer" side="LEFT" startMargin="0.0" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="ihtimal" label="Memnuniyet Derecesi">
+                     <tickLabelFont>
+                        <Font size="14.0" />
+                     </tickLabelFont>
+                  </NumberAxis>
+              </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
